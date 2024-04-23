@@ -3,10 +3,14 @@
   "description": "A React component to create a background simulating stars on a galaxy.",
   "author": "Hugo Folloni",
   "keywords": ["react", "components", "ui", "galaxy", "background", "stars", "mouse-effect", "particles"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c --bundleConfigAsCjs",
