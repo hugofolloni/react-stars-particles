@@ -1,7 +1,9 @@
 # react-stars-particles
 
 A React component to create a background simulating stars on a galaxy.
+
 Attract stars when your mouse are close to them, and leave them when not. 
+
 When you leave a star, it will get back to original position, to not overpopulate an area.
 
 ## Install
