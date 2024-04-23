@@ -113,4 +113,5 @@ Check out the **react-stars-particles** showcase:
 Explore the **react-stars-particles** and **showcase** GitHub repositories:
 
 [GitHub - react-stars-particles](https://github.com/hugofolloni/react-stars-particles)
+
 [GitHub - Galaxy Simulator](https://github.com/hugofolloni/galaxy-simulator)
