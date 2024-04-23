@@ -1,0 +1,50 @@
+{
+  "name": "react-stars-particles",
+  "description": "A React component to create a background simulating stars on a galaxy.",
+  "author": "Hugo Folloni",
+  "keywords": ["react", "components", "ui", "galaxy", "background", "stars", "mouse-effect", "particles"],
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "watch": "rollup -c -bundleConfigAsCjs --watch ",
+    "dev": "concurrently \" npm run watch \" \" npm run start --prefix playground \"",
+    "test": "run-s test:unit test:build",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/components/**/*.js",
+    "test:build": "run-s build",
+    "prepublish": "npm run build"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@testing-library/react": "^15.0.4",
+    "babel-jest": "^29.7.0",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "npm-run-all": "^4.1.5",
+    "react-scripts": "^5.0.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.16.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
